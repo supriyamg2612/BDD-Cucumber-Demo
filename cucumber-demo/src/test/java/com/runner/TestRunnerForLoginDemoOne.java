@@ -12,10 +12,17 @@ import io.cucumber.junit.CucumberOptions;
 		features= "src/test/resources/Feature",
 		glue       = "com.stepdefinition",
 		monochrome = true,
-	//plugin = "html:target"
-		//plugin = {"pretty", "json:target/JSONReport/report.json"}
-				plugin = {"pretty", "junit:target/JUnitReports/report.xml"}
+		plugin = {"pretty", "junit:target/JUnitReports/report.xml",
+						"json:target/JSONReport/report.json",
+						"html:target/HtmlReports"},
+		tags="@Login"
+				
 		)
+
+
+
+
+
 
 		
 public class TestRunnerForLoginDemoOne {
