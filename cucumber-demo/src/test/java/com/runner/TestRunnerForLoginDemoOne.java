@@ -11,9 +11,9 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features= "src/test/resources/Feature",
 		glue       = "com.stepdefinition",
-		monochrome = true
+		monochrome = true,
+		plugin = "html:target"
 		)
-
 
 		
 public class TestRunnerForLoginDemoOne {
