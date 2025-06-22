@@ -16,6 +16,7 @@ import io.cucumber.junit.CucumberOptions;
 						"json:target/JSONReport/report.json",
 						"html:target/HtmlReports"},
 		tags="@Login"
+		
 				
 		)
 

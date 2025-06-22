@@ -1,8 +1,10 @@
 Feature: test Login functionality
-
-  @Login
+@Login
   Scenario: Login Test Using Valid Credentials
-    Given user is on the login page
+    Given browser is open
+    And user is on login page
     When user enters a valid username and password
     And clicks on the login button
     Then user navigates to home page
+
+  
