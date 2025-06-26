@@ -27,25 +27,25 @@ public class LoginDemoOneStepDefinition {
 
 	@Given("user is on login page")
 	public void user_is_on_login_page() {
-		 driver.get("https://courses.ultimateqa.com/users/sign_in");
+		 driver.get("https://www.saucedemo.com/");
 	}
 
 	@When("user enters a valid username and password")
 	public void user_enters_a_valid_username_and_password() {
-		driver.findElement(By.id("user[email]")).sendKeys("ferns123@gmail.com"); 
-        driver.findElement(By.id("user[password]")).sendKeys("Ferns@123456"); 
+		driver.findElement(By.id("user-name")).sendKeys("standard_user"); 
+        driver.findElement(By.id("password")).sendKeys("secret_sauce"); 
 	}
 
 	@When("clicks on the login button")
 	public void clicks_on_the_login_button() {
-		 driver.findElement(By.xpath("//button[@class='button button-primary g-recaptcha']")).click();
+		 driver.findElement(By.id("login-button")).click();
 	}
 
 	@Then("user navigates to home page")
 	public void user_navigates_to_home_page() throws InterruptedException {
 		String actualTitle = driver.getTitle();
 		System.out.println("Current Title: " + actualTitle);
-		Assert.assertEquals("User is not navigated to the home page.", "Sign In - UltimateQA", actualTitle);
+		Assert.assertEquals("User is not navigated to the home page.", "Swag Labs", actualTitle);
 		Thread.sleep(2000);
 driver.close();
 driver.quit();
