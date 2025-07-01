@@ -4,15 +4,13 @@
   <artifactId>cucumber-demo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
-  <dependencies>
-  
-  
-<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
-<dependency>
-<groupId>io.cucumber</groupId>
-<artifactId>cucumber-java</artifactId>
-<version>5.7.0</version>
-</dependency>
+ <dependencies>
+  <!-- Cucumber Core -->
+  <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.14.0</version>
+  </dependency>
 
 
 <!-- https://mvnrepository.com/artifact/junit/junit -->
@@ -24,14 +22,13 @@
 </dependency>
 
 
-<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
-		<dependency>
-			<groupId>io.cucumber</groupId>
-			<artifactId>cucumber-junit</artifactId>
-			<version>5.7.0</version>
-			<scope>test</scope>
-		</dependency>
-		
+ <!-- Cucumber JUnit Integration --> 
+  <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>7.14.0</version>
+    <scope>test</scope>
+  </dependency>
 	
 	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
